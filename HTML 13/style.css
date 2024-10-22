@@ -1,0 +1,28 @@
+section{
+    background-color: gray;
+    padding: 2rem;
+}
+.red, 
+.green, 
+.blue{
+    width: 200px;
+    height: 200px;
+    padding: 2rem;
+    font-size: 3rem;
+    color: white;
+
+}
+.red{
+    background-color: #ff0000;
+}
+.green{
+    background-color: #00ff00;
+    position: relative;
+    top: 100px;
+    /* z-index: -1; */
+}
+.blue{
+    background-color: #0000ff;
+    position: relative;
+    z-index: 1;
+}

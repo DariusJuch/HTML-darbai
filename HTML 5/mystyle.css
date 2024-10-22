@@ -1,0 +1,52 @@
+*
+{
+    box-sizing:border-box
+}
+
+.body{
+    background-color: rgb(235, 235, 215);
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.nav{
+    background-color: rgb(164, 50, 41);
+    padding: 1%;
+    color: aliceblue;
+    font-family:Arial, Helvetica, sans-serif;
+    word-spacing: 14rem;
+    text-indent: 10%; 
+}
+
+
+
+.section{
+ float: left;
+ margin-left: -2.5rem;
+    
+}
+
+.aside{
+    font-family:Arial, Helvetica, sans-serif ;
+}
+
+.article{
+  clear: left;
+  font-family: Arial, Helvetica, sans-serif;
+ 
+}
+  a:link{
+    color: rgb(182, 79, 66);
+  }
+  
+
+  a:visited {
+    color: rgb(182, 79, 66);
+  }
+  
+a{
+    text-decoration: none;
+}
+
+.footer{
+    color: rgb(224, 72, 59);
+}

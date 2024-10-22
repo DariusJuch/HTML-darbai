@@ -1,0 +1,107 @@
+/* Nr.1 */
+.icon-text p::before{
+    content: "";
+    display: block;
+    background: url(images/chat-svgrepo-com.svg);
+    width: 20px;
+    height: 20px;
+    float: left;
+    margin: 0 6px 0 0;
+}
+/* Nr.2 */
+.text a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #000;
+}
+.text a::after{
+    content: " /";
+}
+.text a:first-child:hover::before{
+    content: url(images/arrow-double-end-svgrepo-com.svg);
+    margin: 0 6px 0 0;
+}
+.text a:last-child::after{
+    content: "";
+}
+/* Nr.3 */
+h2 {
+    float: left;
+    width: 170px;
+}   
+.popup{
+    float: left;
+    width: 340px;
+    background: #727272;
+    padding: 10px;
+    border-radius: 6px;
+    color: #FFF;
+    position: relative;
+    font-size: 12px;
+    line-height: 20px;
+}
+.popup:before{
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 12px solid transparent;
+    border-bottom: 12px solid transparent;
+    border-right: 12px solid #727272;
+    position: absolute;
+    top: 16px;
+    left: -12px; 
+}
+:root{
+    --main-bg-color: #f8e9cb;
+    --main-text-color: #000080;
+}    
+section{
+    padding: 20px;
+    color: var(--main-text-color);
+    background-color: var(--main-bg-color);
+}
+.alien{
+    display: flex;
+}
+.alien a{
+    display: flex;
+    align-items: center;
+}
+.alien a::before{
+    content: url(images/alien-svgrepo-com.svg);
+    display: inline-block;
+    padding-right: 2rem;
+    width: 4rem;
+    transition: all 2s ease;
+}
+.alien a::after{
+    content: url(images/alien-svgrepo-com.svg);
+    display: inline-block;
+    padding-left: 4rem ;
+    width: 4rem ;
+    transition: all 2s ease;
+}
+.alien a:hover::before{
+    transform: rotate(360deg);
+}
+.alien a:hover::after{
+    transform: scale(4) rotate(-360deg);
+    padding-left: 10rem;
+}
+/* Nr.5 */
+.plane a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #000;
+}
+.plane a::after{
+    content: url(images/plane-svgrepo-com.svg);
+    transition: all 1s ease;
+    width: 2rem;
+    display: inline-block;
+}
+.plane a:hover::after{
+    transform:rotate(45deg);
+    padding-left: 3rem;
+}

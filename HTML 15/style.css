@@ -1,0 +1,39 @@
+*{
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    margin: 20rem auto;
+    padding: auto;
+    height: 80vh;
+    
+
+}
+.image{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 100%;
+    background-color: brown;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    /* margin: 0rem 2rem; */
+    position: relative;
+    top: 6px;
+    left: -180px;
+}
+.icon{
+    width: 2rem;
+    height: 2rem;
+}
+.text h3{
+    margin: 0;
+
+}
+
+.viskas {
+
+    position: relative;
+}

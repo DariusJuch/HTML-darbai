@@ -1,0 +1,8 @@
+li:last-child::before{
+    content: " ";
+    color: red;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: gray;
+}

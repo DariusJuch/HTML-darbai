@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="mystyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body class="body">
+    <header class="header">
+        <div>
+            <H1>Logo</H1>
+        </div>
+    </header>
+    <nav class="nav">
+        <div>
+            <ul class="a navul" >
+                <li class="litext"><a class="texta" href="index.html">News</a></li>
+                <li class="litext">|</li>
+                <li class="litext"><a class="texta" href="gallery.html">Photo Gallery</a></li>
+                <li class="litext">|</li>
+                <li class="litext"><a class="texta" href="registration.html">Registration</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section class="section">
+        <img class="img" src="images/autum_large.jpg" alt="Photo">
+    </section>
+    <article class="article">
+        <div>
+            <h3>Registration</h3>
+        </div>
+        <fieldset class="table">
+            <legend>RegForm</legend>
+            <form action="">
+             <table>
+                <tr>
+                    <td>Name</td>
+                    <td><input type="text" name="name" id="name" placeholder="Enter your name"></td>
+                </tr>
+                <tr>
+                    <td>Password</td>
+                    <td><input type="password" name="Password" id="Password" placeholder="Enter Password Here"></td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td><input type="email" name="email" id="email" placeholder="Enter Email Here"></td>
+                </tr>
+                <tr>
+                    <td>Date</td>
+                    <td><input type="date" name="date" id=""></td>
+                </tr>
+                <tr>
+                    <td>PhoneNo.</td>
+                    <td><input type="number" name="PhoneNo" id="PhoneNo"></td>
+                </tr>
+                <tr>
+                    <td>SelectFile</td>
+                    <td><input type="file" name="SelectFile" id="SelectFile"></td>
+                </tr>
+                <tr>
+                    <td>Gender</td>
+                    <td>
+                        <input type="radio" name="Gender" id="Gender" value="Male" checked><span>Male</span>
+                        <input type="radio" name="Gender" id="Gender" value="Famale"><span>Famale</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Language</td>
+                    <td>
+                        <input type="checkbox" name="Language" id="Language" value="Hindi" checked><span>Hindi</span>
+                        <input type="checkbox" name="Language" id="Language" value="English"><span>English</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Course</td>
+                    <td>
+                        <select name="Course" id="Course">
+                            <option value="CS">CS</option>
+                            <option value="Java">Java</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Comment</td>
+                    <td>
+                        <textarea name="Comment" id="Comment" rows="10" cols="15"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="submit" value="RegisterNow">
+                        <input type="reset" value="Refresh">
+                    </td>
+                </tr>
+             </table>
+            </form>
+        </fieldset>
+    </article>
+    <footer class="footer">
+        <div>
+            <h2>Copyright &#169 Darius Juchevic</h2>
+        </div>
+    </footer>
+</body>
+</html>

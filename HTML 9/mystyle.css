@@ -1,0 +1,101 @@
+*{
+    box-sizing: border-box;
+}
+
+.body{
+    background: #fcf1b7 ;
+    font-family: "Roboto", sans-serif;
+}
+
+.header{
+    border-color: #ecc23c;
+    border-style: solid;
+    background-color: #ecc23c;
+    padding: 10px;
+}
+.nav{
+    border-color: #550f06;
+    background-color: #550f06;
+    border-width: 20px 5px;
+    border-style: solid;
+    text-align: center;
+    color: white;
+    
+    
+}
+.texta{
+    color: white;
+    text-decoration: none;
+    padding-inline: 10px;
+    text-transform: uppercase;
+
+}
+.section{
+    
+    background-color: white;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+
+}
+.img{
+    width: 100%;
+    object-fit: cover;
+    height: 200px;
+    display: block;
+}
+
+.article{
+    background-color: white;
+    text-align: justify;
+    padding: 20px;
+    border: 1px solid white;
+    margin-top: 20px;
+
+}
+.footer{
+    border: 1px;
+    background-color: #ecc23c;
+    padding: 1px;
+    margin-top: 10px;
+    text-align: center;
+}
+.navul{
+    list-style-type: none;
+    text-align: center;
+}
+
+.litext{
+    display: inline;
+}
+.artlitext{
+ 
+    padding: 20px;
+}
+.main{
+    background-color: white;
+    
+}
+.articaltext{
+    text-align: center;
+}
+
+.articaltext h1{
+    padding: 40px;
+}
+.figureimg{
+    height: 200px;
+
+}
+.divfig{
+    display: flex;
+    text-align: center;
+    justify-content: space-around
+}
+.divfig figcaption{
+   padding: 20px;
+}
+.table{
+    width: 50%;
+    margin: auto;
+}
