@@ -70,7 +70,6 @@ body{
 
 .work-section{
     height: 10vh;
-    background-color: var(--blue);
     padding: 4rem 1rem;
     text-align: center;
 
@@ -88,9 +87,20 @@ body{
 .projects{
     display: flex;
     flex-wrap: wrap;
-    gap: 2rem
+    gap: 2rem;
+    margin: 2rem;
+    justify-content: center;
 }
-.projects a img{
-    height: 45vh;
+.projects-img{
+    object-fit: cover;
 
+}
+.work-bg{
+    background-color: var(--blue);
+    height: 220vh;
+}
+.projects p{
+   text-align: center;
+   margin: -0.2rem;
+   background-color: #000000;
 }
