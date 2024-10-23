@@ -1,0 +1,46 @@
+.grid{
+    display: grid;
+
+    grid-template-columns: repeat(4, 10rem);
+    grid-template-rows: repeat(3, 10rem);
+    gap: 2rem;
+    grid-template-areas: 
+    'green-left green-top green-top red-right'
+    'green-left orange-mid-left red-mid-right green-right'
+    'green-left red-bot-left orange-bot-right green-right'
+     ;
+}
+
+.green{
+    background-color: greenyellow;
+}
+.red{
+    background-color: red;
+}
+.orange{
+    background-color: orange;
+}
+.green-left{
+   grid-area: green-left;
+}
+.green-top{
+    grid-area: green-top;
+}
+.red-right{
+    grid-area: red-right;
+}
+.green-right{
+   grid-area: green-right;
+}
+.orange-mid-left{
+    grid-area: orange-mid-left;
+}
+.red-mid-right{
+    grid-area: red-mid-right;
+}
+.red-bot.left{
+    grid-area: red-bot-left;
+}
+.orange-bot-right{
+    grid-area: orange-bot-right;
+}
