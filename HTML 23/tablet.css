@@ -1,0 +1,36 @@
+body {
+ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+   
+}
+.city{
+    display: grid;
+    grid-template-columns: repeat(3, 18.5625rem );
+    grid-template-rows: repeat(3, 7.75rem);
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 1rem;
+    height: 100%;
+}
+.city-content{
+    display: grid;
+    grid-template-columns: 35% 1fr;    
+    background-color: var(--blue);
+    border-radius: 0.75rem;
+    justify-content: space-between;
+    margin: 0;
+    width: 100%;
+}
+.city-content img{
+    align-self: center;
+    /* width: 100% ; */
+    /* margin: 1rem; */
+    border-radius: 0.75rem;
+}
+.city-content figcaption{
+    align-self: center;
+}
