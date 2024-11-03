@@ -10,14 +10,16 @@
     --red: #be3144;
     --blue: #45567d;
     --dark-gray: #303841;
+    --orange: #ff7f50;
     
 }
 body{
     margin: 0;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
 }
 .meniu{
     display: flex;
-
     position: sticky;
     background-color: var(--meniu-bg-color);
     margin: 0;
@@ -71,7 +73,7 @@ body{
 
 .work-section{
     height: 10vh;
-    padding: 4rem 1rem;
+    padding: 6rem 1rem;
     text-align: center;
 
 }
@@ -89,10 +91,10 @@ body{
     display: grid;
     grid-template-columns: repeat(3, 18rem);
     grid-template-rows: repeat(2, 18rem);
-    gap: 2rem;
+    gap: 3rem;
     margin: 0 auto;
     justify-content: center;
-    margin-bottom: 4rem;
+    margin-bottom: 6rem;
 }
 .projects img{
     object-fit: cover;
@@ -104,7 +106,7 @@ body{
 }
 .work-bg{
     background-color: var(--blue);
-    height: 230vh;
+    height: 250vh;
     text-align: center;
 }
 .projects a{
@@ -112,11 +114,129 @@ body{
     text-align: center;
     background-color: var(--dark-gray);
     color: var(--white);
+    height: 100%;
+
+}
+.projects figcaption{
+    background-color: var(--dark-gray);
+    width: 100%;
+    padding: 0.4rem;
+}
+.projects figcaption:hover::before{
+    content: "<  ";
+    color: var(--orange);
+}
+.projects figcaption:hover::after{
+    content: "  />";
+    color: var(--orange);
 }
 .work-button {
     background-color: var(--dark-gray);
     text-decoration: none;
     color: var(--white);
-    padding: 1rem;
+    padding: 1rem; 
 }
+.work-button:hover{
+    background-color: var(--red);
+}
+.work-button:after{
+    content: "\203A";
+    padding-left: 0.3rem;
 
+}
+.work-button:hover::after{
+    content: "\203A";
+    margin-left: 3px;
+    transform: translateX(0);
+    transition:  0.3s ease-out;
+}
+.contact-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 80vh;
+    background-color: var(--dark-gray);
+}
+.contact-section h1{
+    font-size: 3rem;
+    color: var(--white);
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+}
+.contact-section p{
+    font-size: 1rem;
+    color: var(--white);
+    margin: 0;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-style: italic;
+}
+.all-contact{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    height: 6vh;
+    text-align: center;
+    flex-wrap: wrap;
+}
+.all-contact a{
+    text-decoration: none;
+    color: var(--white);
+    text-shadow: 2px 2px 1px #1f1f1f;
+    transition: 0.3s ease-out;
+    position: relative;
+}
+.github:hover{
+    padding-top: 10px;
+}
+.twitter:hover{
+    padding-top: 10px;
+}
+.email:hover{
+    padding-top: 10px;
+}
+.tel:hover{
+    padding-top: 10px;
+}
+.facebook:hover{
+    padding-top: 10px;
+}
+.facebook svg{
+    width: 16px;
+    position: relative;
+    top: 3px;
+}
+.github svg{
+    width: 17px;
+    position: relative;
+    top: 3px;
+}
+.twitter svg{
+    width: 15px;
+    position: relative;
+    top: 3px;  
+}
+.email svg{
+    width: 15px;
+    position: relative;
+    top: 3px;
+}
+.tel svg{
+    width: 13px;
+    position: relative;
+    top: 3px;
+}
+.footer-section{
+    background-color: var(--dark-gray);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    color: var(--white);
+    font-size: 0.6rem;
+    height: 10vh;
+    border-top: 2px solid var(--red);
+}
