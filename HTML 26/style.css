@@ -1,0 +1,12 @@
+:root{
+    --white:#FFFFFF;
+    --dark-gray:#48556A;
+    --
+}
+*{
+    box-sizing: border-box;
+}
+.clifford-section{
+    display: grid;
+    background-color: ;
+}
