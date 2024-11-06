@@ -1,10 +1,10 @@
 "use strict";
 
-let aPrice = 1.50;
-let bPrice = 1.70;
-let n1Quantity = 3; 
-let n2Quantity = 2;
-let n3Quantity = 1;
+const aPrice = 1.50;
+const bPrice = 1.70;
+const n1Quantity = 3; 
+const n2Quantity = 2;
+const n3Quantity = 1;
 let bunsPrice = +prompt("Įveskite bandelės kainą:");
 
 if (bunsPrice < aPrice) {

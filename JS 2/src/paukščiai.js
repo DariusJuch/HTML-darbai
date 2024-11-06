@@ -35,4 +35,4 @@ if (a < b && a < c) {
     console.log(min);
 }
 let result = max - min;
-console.log(`Skirtumas tarp didžiausio ir mažiausio kiekio: $result`);
+console.log(`Skirtumas tarp didžiausio ir mažiausio kiekio: ${result}`);
