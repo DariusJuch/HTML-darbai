@@ -5,7 +5,9 @@ let myfunction = (num1) => {
     for (let i =0; i < num1; i++) {
         for (let j = 0; j < num1; j++){
             text += "*";
-            if ( i === 1)
+            if ( i === 1){
+                
+            }
         }
         text += "\n"
     }
