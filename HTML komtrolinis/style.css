@@ -1,0 +1,172 @@
+* {
+  box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  --dark-background-color: #252b42;
+  --light-text-color: #fff;
+  --primary-color: #23a6f0;
+  --disabled-element-color: #8ec2f2;
+}
+a {
+  text-decoration: none;
+  color: var(--light-text-color);
+}
+.nav-bar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.nav-link {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+.header-article {
+  background-image: linear-gradient(
+      to left,
+      rgba(245, 246, 252, 0.52),
+      rgba(0, 0, 0, 99.56)
+    ),
+    url("images/herocover1.png");
+  background-size: cover;
+  height: 40vh;
+  color: white;
+  padding: 20px;
+}
+.article-text {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin-left: 11rem;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5rem;
+  gap: 1.2rem;
+}
+.article-text h1 {
+  color: var(--light-text-color);
+  font-size: 40px;
+  font-family: Montserrat;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+}
+.article-text p {
+  color: var(--light-text-color);
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 0.2px;
+}
+.buttom {
+  display: flex;
+}
+.button a {
+  border: 2px solid #ffffff;
+  border-radius: 37px;
+  padding: 0.5rem;
+}
+.buttom-hover:hover {
+  background-color: var(--primary-color);
+  border: 2px solid var(--primary-color);
+}
+.section-product {
+  display: flex;
+  background-color: var(--dark-background-color);
+  height: 30vh;
+  justify-content: center;
+  align-items: center;
+  gap: 8rem;
+  padding: 5rem;
+}
+.mind,
+.life,
+.satisfaction {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.mind h1,
+.life h1,
+.satisfaction h1 {
+  font-size: 16px;
+  color: var(--light-text-color, #fff);
+  font-family: Montserrat;
+  font-weight: 700;
+}
+.mind p,
+.life p,
+.satisfaction p {
+  color: var(--light-text-color, #fff);
+  text-align: center;
+  font-size: 14px;
+  font-family: Montserrat;
+  font-weight: 500;
+}
+.pricing {
+  background-color: var(--disabled-element-color);
+  height: 50vh;
+}
+.pricing-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.pricing-text {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 5rem 0;
+  color: var(--light-text-color);
+  width: 40%;
+}
+.coment{
+  display: flex;
+  color: var(--light-text-color);
+  gap: 5rem;
+  width: 80%;
+}
+.regina, .miles{
+  border: 1px solid var(--light-text-color);
+  width: 50%;
+  background-color: var(--light-text-color);
+  color: #252b42;
+  font-family: "Sour Gummy", sans-serif;
+  padding: 1rem;
+  position: relative;
+  
+}
+.regina img{
+  position: absolute;
+  top: 15px;
+  left: -60px;
+}
+.miles img{
+  position: absolute;
+  top: 15px;
+  left: -60px;
+}
+.footer-section{
+  background-color: var(--dark-background-color);
+  height: 10vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.footer-section p{
+  color: var(--light-text-color);
+}
+.web-icon{
+  display: flex;
+  gap: 1rem;
+}
+.text-footer p{
+  margin: 0;
+}
