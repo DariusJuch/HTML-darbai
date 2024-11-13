@@ -15,6 +15,10 @@ const cart = [];
 
 function logItemNames() {
   //TODO: use the .forEach() method to log out the name of each item
+    items.forEach( item => {
+      console.log(item.name);
+      
+    })
 }
 
 /**
