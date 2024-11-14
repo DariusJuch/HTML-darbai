@@ -27,6 +27,8 @@ function logItemNames() {
  */
 function findItemById(id) {
   // TODO: Use the .find() method to return the item who's id matches the passed in id
+  const userId = items.find(item => item.id == 1)
+  return userId;
 }
 
 /**
@@ -35,6 +37,16 @@ function findItemById(id) {
 function capitalizeNames() {
   // TODO:  Use the .map() and possibly .slice() methods and return a new items array with the item names capitalized
   // DO NOT MUTATE THE ORIGINAL ARRAY IN YOU LOGIC
+  // let newArr = items.name.split("");
+  let newArr = items.map(item => item.name.charAt(0).toUpperCase() + item.name.slice(1));
+  let joined = newArr.join();
+  let splitArr = joined.split("")
+  // let update = 
+   
+  // let splitArr = newArr.split(" ");
+  // let updateArr = newArr.map(word => word.split(" ").length === 2 ? word.charAt(0).toUpperCase() + word.slice(1) : word);
+
+   return splitArr;
 }
 
 /**
