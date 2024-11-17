@@ -1,3 +1,11 @@
-.dar{
-    height: ;
+.box{
+    padding: 2rem; 
+    border: 2px solid black; 
+    margin: 2rem;
 }
+.highlight{
+    background-color: #ecc146;
+}
+table, th, td {
+    border:1px solid black;
+  }
