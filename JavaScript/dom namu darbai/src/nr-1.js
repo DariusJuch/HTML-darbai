@@ -151,9 +151,9 @@ divWithText.appendChild(buttomToChangeBg);
 
 let setBg = (e) => {
    divWithText.setAttribute("class", "highlight");
-   if (divWithText.setAttribute("class", "highlight")){
-      divWithText.style = " #ecc146";
-   }
+   // divWithText.setAttribute("class", "highlight");
+     
+   
 }
 
 buttomToChangeBg.addEventListener("click", setBg);

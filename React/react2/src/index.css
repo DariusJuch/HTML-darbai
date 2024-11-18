@@ -1,0 +1,50 @@
+*{
+  box-sizing: border-box;
+}
+#root{
+  border: 1px solid #c6e5f3;
+  border-radius: 1rem;
+  background-color: #c6e5f3;
+  margin: 2rem;
+
+}
+.headerText{
+  text-align: center;
+}
+.para{
+  text-align: center;
+}
+.flexForm{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+ 
+}
+.form input{
+  display: flex;
+  flex-direction: column;
+  border: 10px solid white; 
+  background-color: white;
+  border-radius: 0.5rem;
+ 
+}
+.form{
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.subButton{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+
+}
+.buttom{
+  padding: 0.5rem 5.5rem;
+  border: 1px solid #ea7977; 
+  background-color: #ea7977;
+  border-radius: 0.5rem;
+}
