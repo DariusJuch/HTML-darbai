@@ -4,16 +4,24 @@ function MainSection () {
     
     return(
         <>
-            <p>Perequisite to get started react.js</p>
-            <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-            </ul>
-            <div>
-            <img src={Asabeneh} alt="" />
-            <p>Asabeneh Yetayeh</p>
+        <section className="section-bg">
+            <div className="main-text">
+                <p>Perequisite to get started react.js</p>
             </div>
+            <div>
+                <ul className="unord-list">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                </ul>
+            </div>
+            <div className="photo">
+                <img src={Asabeneh} alt="" className="photo"/>
+            </div>
+            <div className="photo-text">
+                <p>Asabeneh Yetayeh</p>
+            </div>
+        </section>
         </>
     )
 }

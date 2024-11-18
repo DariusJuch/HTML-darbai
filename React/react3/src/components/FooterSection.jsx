@@ -1,7 +1,7 @@
 function FooterSection () {
     return(
         <>
-        <footer>
+        <footer className="footer-text">
             <p>Copyright 2020</p>
         </footer>
         </>

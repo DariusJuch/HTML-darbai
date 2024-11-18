@@ -1,1 +1,63 @@
-fo
+.header-text{
+    font-size: 6.5rem;
+    font-weight: 500;
+    text-indent: 10rem;
+    margin: 0;
+}
+.header-bg{
+    background-color: #61dbfb;
+}
+.paragraph-text{
+    display: flex;
+    flex-direction: column;
+}
+.paragraph-text p{
+    margin: 0;
+    text-indent: 10rem;
+    line-height: 32px;
+    
+}
+.first-line{
+    font-size: 1.7rem;
+    font-weight: 200;
+}
+.java{
+    font-size: 1.3rem;
+    font-weight: 200;
+}
+.name{
+    font-size: 1.1rem;
+    font-weight: 200;
+}
+.section-bg{
+    height: 45vh;
+}
+.main-text{
+    text-indent: 10rem;
+} 
+.main-text p{
+    margin: 0;
+    line-height: 32px
+}
+.unord-list{
+    text-indent: 10rem;
+    list-style-type: none;
+    margin: 0; 
+}
+.photo{
+    text-indent: 10rem;
+    border-radius: 100%;
+}
+.photo-text{
+    text-indent: 11.8rem;
+}
+.photo-text p {
+    margin: 0;
+}
+.footer-text{
+    display: flex;
+    justify-content: center;
+    background-color: #61dbfb;
+    text-align: center;
+    height: 5vh;
+}
