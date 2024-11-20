@@ -1,14 +1,13 @@
-import Exercise3 from './components/Exrecise3'
-import './App.css'
+import UserType from "./components/Exercise7";
+import "./App.css";
 
 function App() {
 
-
   return (
     <>
-      <Exercise3/>
+      <UserType/>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

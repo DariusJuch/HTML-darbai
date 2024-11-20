@@ -40,3 +40,15 @@
 .read-the-docs {
   color: #888;
 }
+.green-background{
+  background-color: #008000;
+}
+.red-background{
+  background-color: #ff0000;
+}
+.yellow-background{
+  background-color: #ffff00;
+}
+.def-background{
+  background-color: black;
+}

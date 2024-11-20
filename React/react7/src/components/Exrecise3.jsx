@@ -8,7 +8,7 @@ function Exercise3() {
   let jsx;
   if (isLoggedIn === true) {
       jsx = <div><button onClick={logIn}>Profile</button></div>;
-    } else if (isLoggedIn === false) {
+    } else if (isLoggedIn === false || isLoggedIn === true) {
       jsx = <div>
         <button onClick={logIn}>Log In</button>
         <button onClick={logIn}>Sign Up</button>
