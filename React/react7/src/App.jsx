@@ -1,11 +1,11 @@
-import UserType from "./components/Exercise7";
+import UserRole from "./components/Exercise4";
 import "./App.css";
 
 function App() {
 
   return (
     <>
-      <UserType/>
+      <UserRole/>
     </>
   );
 }
