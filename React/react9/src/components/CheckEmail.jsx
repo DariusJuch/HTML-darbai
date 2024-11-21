@@ -1,18 +1,18 @@
 import { useState } from "react";
 function CheckEmail() {
-  const [inputValue, setInputValue] = useState();
+  const [inputValue, setInputValue] = useState({
+    email: "",
+    error: "",
+  });
 
-  const handleChange = (event) => {
-    setInputValue(event.target.value);
+  const handleChange = (e) => {
+    const email = e.target.value;
+    
     
     const emailFormule = /^[\w\-\.]+@([\w-]+\.)+[\w-]{2,}$/gm;
-      
-    if (emailFormule.test(event.target.value)) {
-        console.log(inputValue);
-      } else if (!emailFormule.test(event.target.value)) {
-        alert("Please check your Email");
-      }
-  }
+    const error = emailFormule.test(email) ? "" : "Please check your Email";
+    setInputValue({ email, error});
+  }   
   return (
     <>
       <div>
@@ -27,11 +27,11 @@ function CheckEmail() {
               name="email"
               className="form-input bg-slate-200"
               onChange={handleChange}
-              value={inputValue}
+              value={inputValue.email}
             />
           </p>
         </form>
-        <p>{inputValue}</p>
+        <p>{inputValue.error}</p>
       </div>
     </>
   );
