@@ -16,7 +16,7 @@ const users =  {
 function App() {
   return (
     <>
-      <PofileCard/>
+      <PofileCard users={users}/>
     </>
   )
 }

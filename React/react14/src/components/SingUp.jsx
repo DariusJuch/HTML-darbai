@@ -16,17 +16,18 @@ function SingUp() {
       fullname: "",
       email: "",
       password: "",
+      confirmpassword: "",
     },
   });
 
-  const password = watch("password", "");
+  const {password} = watch();
 
   const formSubmitHandler = (data) => {
     console.log(data);
     setValue("fullname", "");
     setValue("email", "");
     setValue("password", "");
-    setValue("password", "");
+    setValue("confirmpassword", "");
   };
   return (
     <>
@@ -83,16 +84,11 @@ function SingUp() {
               placeholder="Enter a your password"
               {...register("confirmpassword", {
                 required: "Password is required",
-                validate: (value, { password }) =>
-                  value === password || "Password do no match",
+                validate: (value) =>
+                  value === password|| "Password do no match",
               })}
             />
-            <p className=" text-red-600">{errors.password?.message}</p>
-            {password.length > 0 && password.length < 8 && (
-              <p className="text-orange-500">
-                Password is to short. Keep typing!
-              </p>
-            )}
+            <p className=" text-red-600">{errors.confirmpassword?.message}</p>
           </div>
           <input type="submit" value="Submit" className="m-5 bg-red-600 p-2" />
         </form>
