@@ -25,7 +25,7 @@ function App() {
   return (
     <>
       <Forms setUpdate = {setUpdate} />
-      {!error && <UsersList users = {users}/>}
+      {!error && <UsersList users = {users} setUpdate={setUpdate}/>}
       {error && <p>{error}</p>}
     </>
   );

@@ -1,39 +1,63 @@
 import { useForm } from "react-hook-form";
 import { postdata } from "../helpers/post";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { updateData } from "../helpers/update";
 
-
-function Forms({ setUpdate }) {
-  const { error, seteError } = useState("");
+function Forms({ setUpdate, user, setFormOpen }) {
+  const { error, setError } = useState("");
 
   const {
     register,
     handleSubmit,
+    reset,
     formState: { errors },
+    setValue,
   } = useForm();
+
+  useEffect(() => {
+    if (user) {
+      const {username, email, channel, likes, id} = user;
+      setValue("username", username);
+      setValue("email", email);
+      setValue("channel", channel);
+    }
+  }, [user]);
 
   const formSubmitHandler = async (data) => {
     try {
-      await postdata({...data, likes: 0});
-      setUpdate((prev) => prev + 1)
+      if (user) {
+        console.log(data);
+        
+        await updateData(user.id, data);
+        setFormOpen(false);
+      } else {
+        await postdata({ ...data, likes: 0 });
+      }
+
+      setUpdate((prev) => prev + 1);
     } catch (error) {
-      seteError(error.massage);
+      alert(error.massage);
     }
+    reset();
   };
 
   return (
     <>
-      <form onSubmit={handleSubmit(formSubmitHandler)} noValidate className="flex flex-col justify-center items-center">
-        <div >
-          <label htmlFor="userName">User Name:</label>
+      <form
+        onSubmit={handleSubmit(formSubmitHandler)}
+        noValidate
+        className="flex flex-col justify-center items-center"
+      >
+        <div>
+          <label htmlFor="username">User Name:</label>
           <input
             type="text"
             id="userName"
-            {...register("userName", {
+            {...register("username", {
               required: "User Name is required",
             })}
           />
-          <div className="error">{errors.userName?.message}</div>
+          <div className="error">{errors.username?.message}</div>
         </div>
 
         <div>
@@ -63,10 +87,12 @@ function Forms({ setUpdate }) {
               },
             })}
           />
-          <div className="error">{errors.email?.message}</div>
+          <div className="error flex justify-center">
+            {errors.email?.message}
+          </div>
         </div>
 
-        <div>
+        <div className="flex items-center">
           <label htmlFor="channel">Favourite channel:</label>
           <input type="text" id="channel" {...register("channel")} />
         </div>
