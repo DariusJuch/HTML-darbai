@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+*{
+    box-sizing: border-box;
+}
+.nav-bar{
+    border: 2px solid #d95b5b;
+    background-color: #d95b5b;
+    position: sticky;
+    padding: 1rem;
+}
+.regForm, .donList{
+    border-right: 1px solid black;
+    padding-right: 1rem;
+
+}
+.ten-reason{
+    font-size: 2rem;
+    font-weight: 500;
+    padding: 2rem;
+}
+.ol-text{
+    font-size: 1rem;
+    font-weight: 500;
+    width: 30%;
+    padding: 1rem;
+}
