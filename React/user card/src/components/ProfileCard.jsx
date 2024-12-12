@@ -12,7 +12,7 @@ const PofileCard = () => {
       <div className=" w-80 mx-auto my-8 p-6 bg-blue-50 rounded-lg shadow-lg text-center">
         <div className="w-24 h-24 mx-auto rounded-full overflow-hidden border-4 border-white">
           <img
-            src={data.avatar}
+            src=""
             alt="Profile"
             className=" w-full h-full object-cover"
           />

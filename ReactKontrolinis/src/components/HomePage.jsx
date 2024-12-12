@@ -1,0 +1,3 @@
+function HomePage ({ update, setupdate}) {
+    
+}
